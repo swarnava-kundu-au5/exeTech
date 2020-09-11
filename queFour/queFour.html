@@ -1,7 +1,7 @@
 <script>
   function validateform() {
     var name = document.myform.name.value;
-    var password = document.myform.password.value;
+    var password = document.myform.checkme.value;
 
     if (name == null || name == "") {
       alert("Name can't be blank");
@@ -20,7 +20,7 @@
     onsubmit="return validateform()"
   >
     Name: <input type="text" name="name" /><br />
-    <input type="”check”" name="”checkme”" /><br />
+    <input type="check" name="checkme" /><br />
     <input type="submit" value="register" />
   </form>
 </body>
